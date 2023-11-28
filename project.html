@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en"></html>
+ 
+<head>
+<meta charset="UTF-8">
+
+<title>Health Statistics Form</title>
+
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+<div class="container">
+    <h1 style="text-align: center; background-color:powderblue;"><i> My Health Statistics Form </i> </h1>
+    <form id="healthForm">
+        <div class="form-group">
+            <label for="waterIntake">How many glasses of water do you drink per day?</label>
+            <input type="number" id="waterIntake" name="waterIntake" required>
+        </div>
+        <div class="form-group">
+            <label for="mealsPerDay">How many meals do you eat per day?</label>
+            <input type="number" id="mealsPerDay" name="mealsPerDay" required>
+        </div>
+        <div class="form-group">
+            <label for="exerciseFrequency">How often do you exercise per week?</label>
+            <select id="exerciseFrequency" name="exerciseFrequency" required>
+                <option value="0">Never</option>
+                <option value="1-2 times">1-2 times</option>
+                <option value="3-4 times">3-4 times</option>
+                <option value="5-6 times">5-6 times</option>
+                <option value="7 times">7 times</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sleepHours">How many hours of sleep do you get per night?</label>
+            <input type="number" id="sleepHours" name="sleepHours" required>
+        </div>
+        <div class="form-group">
+            <label for="stressLevels">How would you rate your stress levels on a scale of 1 to 10?</label>
+            <input type="number" id="stressLevels" name="stressLevels" min="1" max="10" required>
+        </div>
+ 
+    </form>
+    <button id="sub"  onclick=subi() >Submit</button>
+</div>
+
+<script src="main project.js"></script>
+</body>
+</html
